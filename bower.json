@@ -1,0 +1,22 @@
+{
+  "name": "nn'mn'SampleVueCanvaasUse",
+  "description": "sample",
+  "main": "index.html",
+  "moduleType": [
+    "es6",
+    "globals",
+    "node"
+  ],
+  "authors": [
+    "Arch"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

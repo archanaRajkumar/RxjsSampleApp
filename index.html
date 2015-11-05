@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Rx Web Socket Client Server</title>
+		<script src="node_modules/angular/angular.min.js"/>	
+		<script src="node_modules/rx/dist/rx.all.js"/>
+		<script src="node_modules/rx-angular/dist/rx.angular.js"/>
+	</head>
+	<body ng-app="ClientServerSampleApp">
+		<div ng-controller="msgCtrl">
+			<div ng-repeat="m in messages track by $index">
+				{{m}}
+			</div>
+		</div>
+
+		<div ng-controller="sendCtrl">
+			<input type="text" placeholder="Type to Send" ng-model="msg">
+			<button ng-click="broadcast()">Send This!</button>
+			{{error}}
+		</div>
+		<script src="app.js"/>
+
+	</body>
+</html>
